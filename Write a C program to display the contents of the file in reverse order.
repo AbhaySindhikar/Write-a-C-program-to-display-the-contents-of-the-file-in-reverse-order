@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#include <string.h>
+
+#define MAX 100
+
+// Function to reverse the file content
+
+void reverseContent(char* x)
+
+{
+
+// Opening the path entered by user
+
+FILE* fp = fopen(x, "a+");
+
+// If file is not found then return
+
+if (fp == NULL) {
+
+printf("Unable to open file\n");
+
+return;
+
+}
+
